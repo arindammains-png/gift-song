@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Ishanvi ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    text-align:center;
+    background:linear-gradient(#8fd3ff,#eaf9ff);
+    overflow-y:auto;
+}
+
+/* INTRO */
+#intro{
+    height:100vh;
+    position:relative;
+}
+
+/* PANDA */
+#pandaWrap{
+    position:absolute;
+    left:-240px;
+    top:40%;
+    width:180px;
+    height:180px;
+    animation:rollIn 6s ease forwards;
+}
+.panda{
+    width:180px;
+    height:180px;
+    background:white;
+    border-radius:50%;
+    border:4px solid #000;
+    position:relative;
+    animation:roll 6s ease forwards;
+}
+.ear{
+    width:42px;height:42px;
+    background:black;border-radius:50%;
+    position:absolute;top:-18px;
+}
+.ear.left{left:18px}
+.ear.right{right:18px}
+.eye{
+    width:26px;height:36px;
+    background:black;border-radius:50%;
+    position:absolute;top:55px;
+}
+.eye.left{left:40px}
+.eye.right{right:40px}
+.nose{
+    width:14px;height:10px;
+    background:black;border-radius:50%;
+    position:absolute;
+    top:100px;left:50%;
+    transform:translateX(-50%);
+}
+.arm{
+    width:70px;height:22px;
+    background:black;border-radius:20px;
+    position:absolute;
+    right:-10px;top:100px;
+    transform-origin:left center;
+    animation:armOut 1.5s ease forwards;
+    animation-delay:6s;
+}
+
+/* GIFT */
+.gift{
+    position:absolute;
+    right:-70px;
+    top:90px;
+    font-size:40px;
+    cursor:pointer;
+    opacity:0;
+    animation:giftShow 1s ease forwards,giftBounce 1.4s ease-in-out infinite;
+    animation-delay:7.5s,8.5s;
+}
+.gift.open{
+    animation:none;
+    transform:scale(1.4);
+}
+
+/* TEXT */
+.open-text{
+    position:absolute;
+    width:100%;
+    top:70%;
+    font-size:22px;
+    opacity:0;
+    animation:textShow 1s ease forwards;
+    animation-delay:8.5s;
+}
+
+/* DARK FADE */
+#overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.35);
+    opacity:0;
+    pointer-events:none;
+    transition:opacity 1s ease;
+}
+
+/* SONG (HIDDEN INITIALLY) */
+#song{
+    padding:50px 20px;
+    background:radial-gradient(circle,#0b2b3c,#020b13);
+    color:white;
+    opacity:0;
+    visibility:hidden;
+    transition:opacity 1.5s ease;
+}
+
+.song-box{
+    background:rgba(255,255,255,.1);
+    padding:25px;
+    border-radius:18px;
+    max-width:760px;
+    margin:auto;
+}
+
+/* typing effect */
+.line{
+    opacity:0;
+    animation:fadeLine 0.8s ease forwards;
+}
+
+p{line-height:1.9;font-size:18px}
+footer{margin-top:30px;font-size:14px;opacity:.85}
+
+/* HEARTS */
+.heart{
+    position:fixed;
+    bottom:-20px;
+    font-size:20px;
+    animation:heartFloat 6s linear forwards;
+}
+
+/* ANIMATIONS */
+@keyframes rollIn{
+    to{left:50%;transform:translateX(-50%)}
+}
+@keyframes roll{
+    to{transform:rotate(720deg)}
+}
+@keyframes armOut{
+    to{transform:rotate(-25deg)}
+}
+@keyframes giftShow{to{opacity:1}}
+@keyframes giftBounce{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-8px)}
+}
+@keyframes textShow{to{opacity:1}}
+@keyframes heartFloat{
+    from{transform:translateY(0);opacity:1}
+    to{transform:translateY(-100vh);opacity:0}
+}
+@keyframes fadeLine{
+    to{opacity:1}
+}
+</style>
+</head>
+
+<body>
+
+<div id="overlay"></div>
+
+<section id="intro">
+    <div id="pandaWrap">
+        <div class="panda">
+            <div class="ear left"></div>
+            <div class="ear right"></div>
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+            <div class="arm"></div>
+            <div class="gift" onclick="openGift()">🎁</div>
+        </div>
+    </div>
+    <div class="open-text">Open it 💙</div>
+</section>
+
+<section id="song">
+<h1>HERE’S THE SONG FOR YOU ISHANVI ❤️❤️</h1>
+
+<div class="song-box">
+<p id="lyrics">
+<span class="line">I was lost in the dark till you came my way</span><br>
+<span class="line">All i think about is you to stay</span><br>
+<span class="line">Oh my brain is numb for you</span><br>
+<span class="line">My heart, it beats for you</span><br>
+<span class="line">These hands wanna pair up with you</span><br>
+<span class="line">These eyes, they search for youuuuu</span><br><br>
+
+<span class="line">Oh i can never let you go</span><br>
+<span class="line">All i live is to see u glow</span><br>
+<span class="line">And it never makes me low</span><br>
+<span class="line">Cuz u are pure like a soft white snoww</span><br><br>
+
+<span class="line">Oh oh oooo</span><br><br>
+
+<span class="line">Hey you miss</span><br>
+<span class="line">You always make me bliss</span><br>
+<span class="line">All i want is just one kiss</span><br>
+<span class="line">You are perfect , i won't miss</span><br><br>
+
+<span class="line">He he he</span><br><br>
+
+<span class="line">I was lost in the dark till you came my way</span><br>
+<span class="line">All i think about is you to stayyyy</span><br>
+<span class="line">Oh oh Yeahh</span><br><br>
+
+<span class="line">Hey you miss</span><br>
+<span class="line">Just stay with me and dance throughout the night,</span><br>
+<span class="line">You’re the spark that makes me feel everything right,</span><br>
+<span class="line">In your arms, I feel so alive,</span><br>
+<span class="line">With you, my heart will always thrive.</span><br>
+<span class="line">Oh ohh ohhh</span>
+</p>
+</div>
+
+<footer>Made by <strong>Arindam</strong> ❤️</footer>
+</section>
+
+<script>
+function openGift(){
+    const gift = document.querySelector(".gift");
+    const song = document.getElementById("song");
+    const overlay = document.getElementById("overlay");
+
+    gift.classList.add("open");
+    overlay.style.opacity = "1";
+
+    song.style.visibility = "visible";
+    song.style.opacity = "1";
+
+    song.scrollIntoView({behavior:"smooth"});
+
+    document.querySelectorAll(".line").forEach((line,i)=>{
+        line.style.animationDelay = (i * 0.35) + "s";
+    });
+
+    setInterval(()=>{
+        const h=document.createElement("div");
+        h.className="heart";
+        h.innerHTML="❤️";
+        h.style.left=Math.random()*100+"vw";
+        document.body.appendChild(h);
+        setTimeout(()=>h.remove(),6000);
+    },450);
+}
+</script>
+
+</body>
+</html>
